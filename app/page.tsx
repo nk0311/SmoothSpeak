@@ -5,6 +5,7 @@ import { Dot } from "lucide-react";
 import HowItWorks from "@/components/home/howitworks";
 import Pricing from "@/components/home/pricing";
 
+
 export default function Home() {
   return (
     <main className="mx-auto w-full inset-0

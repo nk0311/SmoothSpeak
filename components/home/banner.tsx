@@ -5,14 +5,13 @@ import { ArrowRight } from "lucide-react"
 export default function Banner() {
     return (<section className="lg:max-w-6xl mx-auto flex flex-col z-0 items-center
     justify-center py-28 sm:pt-32 transition-all animate-in">
-        <h1 className="py-6 text-center">Turn your words into <span
+        <h1 className="py-6 text-center">Turn your thoughts into <span
         className="underline underline-offset-8 decoration-dashed decoration-purple-200"
         >
-            captivating
+            irresistible
             </span> blog posts</h1>
         <h2 className=" text-center px-4 lg:px-0 lg:max-w-4xl">
-            Convert your video or voice into a Blog Post in 
-            seconds with the power of AI!
+            Face it: AI does what you can’t. It’s quick, it’s precise, and it transforms your videos into blog posts. While you handle the big ideas, let us take care of the rest.
         </h2>
 
         <Button variant={"link"}

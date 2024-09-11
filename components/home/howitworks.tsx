@@ -21,7 +21,7 @@ export default function HowItWorks() {
         </h2>
       </div>
       <h3 className="flex items-center justify-center mb-24 text-center font-bold">
-        Easily repurpose your content into SEO focused blog posts
+      Effortlessly transform your content into SEO-optimized blog posts.
       </h3>
 
       <div className="flex items-center justify-center gap-4 lg:gap-24">

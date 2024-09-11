@@ -59,6 +59,7 @@ export default function UploadForm() {
     }
 
     if (file) {
+      /* eslint-disable @typescript-eslint/no-explicit-any */
       const resp: any = await startUpload([file]);
       console.log({ resp });
 

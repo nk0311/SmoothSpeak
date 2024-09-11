@@ -16,8 +16,8 @@ export default async function PostsPage({
 
   const sql = await getDbConnection();
 
-  const posts: any =
-    await sql`SELECT * from posts where user_id = ${user.id} and id = ${id}`;
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  const posts: any = await sql`SELECT * from posts where user_id = ${user.id} and id = ${id}`;
 
   return (
     <div className="mx-auto w-full max-w-screen-xl px-2.5 lg:px-0 mb-12 mt-28">

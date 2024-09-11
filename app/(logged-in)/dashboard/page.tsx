@@ -6,7 +6,6 @@ import getDbConnection from "@/lib/db";
 import {
   doesUserExist,
   getPlanType,
-  hasCancelledSubscription,
   updateUser,
 } from "@/lib/user-helpers";
 import { currentUser } from "@clerk/nextjs/server";
@@ -27,7 +26,8 @@ export default async function Dashboard() {
   let userId = null;
   let priceId = null;
 
-  const hasUserCancelled = await hasCancelledSubscription(sql, email);
+
+  // const hasUserCancelled = await hasCancelledSubscription(sql, email);
   const user = await doesUserExist(sql, email);
 
   if (user) {

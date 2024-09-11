@@ -42,6 +42,7 @@ export async function handleCheckoutSessionCompleted({
 
 }
 async function insertPayment(
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     sql: any,
     session: Stripe.Checkout.Session,
     priceId: string,
@@ -55,6 +56,7 @@ async function insertPayment(
   }
 
 async function createOrUpdateUser(
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     sql: any,
     customer: Stripe.Customer,
     customerId: string
@@ -72,6 +74,7 @@ async function createOrUpdateUser(
 }
 
 async function updateUserSubscription(
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     sql: any,
     priceId: string,
     email: string,

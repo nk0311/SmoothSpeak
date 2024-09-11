@@ -2,29 +2,9 @@ import { ArrowRight, CheckIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { plansMap } from "@/lib/constants";
 
 
-export const plansMap = [
-    {
-      id: "basic",
-      name: "Basic",
-      description: "Get started with SmoothSpeak!",
-      price: "10",
-      items: ["3 Blog Posts", "3 Transcription"],
-      paymentLink: "https://buy.stripe.com/test_aEU2aNbGsfomffy288",
-      priceId: process.env.NODE_ENV === "development" ? "price_1Px5yRP0F4ph3eylUEdciCaK" : "",
-
-    },
-    {
-      id: "pro",
-      name: "Pro",
-      description: "All Blog Posts, let’s go!",
-      price: "19.99",
-      items: ["Unlimited Blog Posts", "Unlimited Transcriptions"],
-      paymentLink: "https://buy.stripe.com/test_3cs5mZ6m8eki3wQ6op",
-      priceId: process.env.NODE_ENV === "development" ? "price_1Px5zIP0F4ph3eylk0h5Ieuz" : "",
-    },
-  ];
 
   export default function Pricing() {
     return (

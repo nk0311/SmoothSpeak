@@ -6,6 +6,7 @@ import Header from "@/components/home/header";
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({ 
     subsets: ["latin"], 
@@ -35,12 +36,12 @@ export default function RootLayout({
           <Header></Header>
          
           <main>{children}</main>
+          <Toaster/>
         </body>
     </html>
     </ClerkProvider>
      
       
-     
      
     
   );
